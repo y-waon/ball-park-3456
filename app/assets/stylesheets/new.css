@@ -1,0 +1,18 @@
+.weight-bold-text{
+  display: flex;
+  text-align: center;
+}
+
+.img-upload{
+  text-align: center;
+}
+.click-upload{
+  margin-top: 20px;
+}
+
+.img-pg{
+  margin-top: 20px;
+}
+p{
+  margin-bottom: 10px;
+}

@@ -1,0 +1,29 @@
+.syoukai{
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  width: 50%;
+}
+.setumei{
+  display: flex;
+  justify-content: space-between;
+}
+.yakyu{
+  font-size: 30px;
+  width: 50%;
+  text-align: center;
+}
+.as{
+  border-bottom: solid #32cd32;
+  text-align: center;
+  margin-top: 50px;
+  margin-right: 70px;
+  margin-left: 70px;
+}
+.yuyu{
+  text-align: left;
+  margin-right: 70px;
+  margin-left: 70px;
+  margin-top: 15px;
+  font-size: 25px;
+}
