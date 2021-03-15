@@ -16,3 +16,46 @@
 p{
   margin-bottom: 10px;
 }
+
+.select-tweet-area{
+  width: 30vh;
+  padding: 5px 0 5px 0;
+}
+
+.select-tweet-category{
+  width: 30vh;
+  padding: 5px 0 5px 0;
+}
+
+.select-tweet-status{
+  width: 30vh;
+  padding: 5px 0 5px 0;
+}
+
+.input-text-image{
+  margin-top: 10px;
+}
+.form-true{
+  background-color: #b0c4de;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+.input-text-title{
+  padding: 5px 50px 0px 10px;
+  margin-top: 20px;
+  text-align: left;
+  align-items: center;
+  width: 30vh;
+}
+
+.input-tweet-text{
+  padding: 5px 50px 0px 10px;
+  margin-top: 20px;
+  text-align: left;
+  align-items: center;
+  width: 30vh;
+  height: 15vh;
+}
