@@ -1,0 +1,47 @@
+<%= render "shareds/header" %>
+
+<%= form_with model: @tweet, url: tweets_path, class:'form-wrap', local: true do |f| %>
+  <h2 class="sinki">NEW TWEET</h2>
+
+  <div class="form-group">
+    <div class="form-text-wrap">
+        出品画像
+    </div>
+    <div class="form-text">
+        <%= f.file_field :image, id:"item-image" %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text" >ツイートタイトル</label>
+    </div>
+    <%= f.text_field :title, class:"input-text", autofocus: true, placeholder:"ツイートの題名を入力" %>
+  </div>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text" >ツイート</label>
+    </div>
+    <%= f.text_field :text, class:"input-tweet", autofocus: true, placeholder:"ツイートを入力" %>
+  </div>
+
+  <div class="form-group">
+    <div class='form-text-wrap'>
+      <label class="form-text" >場所</label>
+    </div>
+    <%= f.text_field :place, class:"input-text", autofocus: true, placeholder:"場所を入力" %>
+  </div>
+
+  <div class="form-group", id='tag-field'>
+    <div class='form-text-wrap'>
+      <% f.label :tag_list, "タグ付け" %>
+    </div>
+      <%= f.text_field :tag_list, value: @tweet.tag_list.join(',') %>
+    </div>
+
+  <div class="actions">
+    <%= f.submit "ツイートする" ,class:"register-red-btn" %>
+  </div>
+<% end %>
+
