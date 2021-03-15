@@ -12,16 +12,19 @@
     </div>
   </div>
   <h2 class="sinki">NEW TWEET 一覧表示</h2>
-  <div class="tweet-wrap">
-    <%# @tweets.each do |tweet|%>
-      <div class='image-content'>
-        <%#= image_tag tweet.image, class: "tweet-img" %>
-      </div>
-      <div class='tweet-title'>
-        <%#= tweet.title %>
-      </div>
-      <div class='tweet-text'>
-        <%#= tweet.title %>
-      </div>
-  </div>
+  <ul class="tweet-wrap">
+    <% @tweets.each do |tweet|%>
+      <li class="tweet-all">
+        <div class='image-content'>
+          <%= image_tag tweet.image, class: "tweet-img" %>
+        </div>
+        <div class='tweet-title'>
+          <%= tweet.title %>
+        </div>
+        <div class='tweet-text'>
+          <%= tweet.area.name %>
+        </div>
+      </li>
+    <% end %>
+  </ul>
 </div>

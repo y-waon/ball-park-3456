@@ -27,3 +27,21 @@
   margin-top: 15px;
   font-size: 25px;
 }
+.tweet-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.tweet-all{
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.tweet-title{
+  font-weight: bold;
+}
+.tweet-img{
+  height: 25vh;
+  width: 25vh;
+}
