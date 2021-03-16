@@ -3,7 +3,7 @@
 <h2 class="sinki">TWEET　詳細</h2>
 
 <div class="main-show">
-  <%= link_to ("投稿者　#{@tweet.user.user_name}　さん"), "#", class: :tweet_user %>
+  <%= link_to ("投稿者　#{@tweet.user.user_name}　さん"), user_path(@tweet.user.id), class: :tweet_user %>
   <div class='image-content-show'>
     <%= image_tag @tweet.image, class: "tweet-img-show" %>
   </div>
