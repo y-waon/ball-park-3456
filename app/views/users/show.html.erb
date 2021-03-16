@@ -1,18 +1,8 @@
 <%= render "shareds/header" %>
 
-<div class='main'>
-  <div class="setumei">
-    <div class="syoukai">
-      <%= image_tag "baseball-No.1.jpg", class:"list-pict" %>
-    </div>
-    <div class="yakyu">
-      <h4 class="as">スポーツをしよう！！</h4>
-      <div class="yuyu">　ororoorororor
-      <br>ororoorororor
-      <br>ororororororo</div>
-    </div>
-  </div>
-  <h2 class="sinki">NEW TWEET 一覧表示</h2>
+<h2 class="sinki"><%= @user.user_name%>さんの投稿</h2>
+
+<div class="main-user">
   <ul class="tweet-wrap">
     <% @tweets.each do |tweet|%>
       <li class="tweet-all">

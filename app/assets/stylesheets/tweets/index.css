@@ -31,12 +31,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 .tweet-all{
   text-align: center;
   margin-top: 20px;
-  margin-left: 30px;
-  margin-right: 30px;
 }
 .tweet-title{
   font-weight: bold;
