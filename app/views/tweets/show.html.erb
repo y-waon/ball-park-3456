@@ -4,6 +4,12 @@
 
 <div class="main-show">
   <%= link_to ("投稿者　#{@tweet.user.user_name}　さん"), user_path(@tweet.user.id), class: :tweet_user %>
+  <% if user_signed_in? && current_user.id == @tweet.user_id %>
+    <div class="tweet__manage">
+      <%= link_to "編集する", edit_tweet_path(@tweet.id), class: :tweet_edit_btn %>
+      <%= link_to "削除する", tweet_path(@tweet.id), method: :delete, class: :tweet_delete_btn %>
+    </div>
+  <% end %>
   <div class='image-content-show'>
     <%= image_tag @tweet.image, class: "tweet-img-show" %>
   </div>
@@ -26,7 +32,7 @@
       </tr>
       <tr>
         <th class="show-area">公園の規模</th>
-        <td class="show-value"><%= @tweet.area.name %></td>
+        <td class="show-value"><%= @tweet.status.name %></td>
       </tr>
     </tbody>
   </table>
