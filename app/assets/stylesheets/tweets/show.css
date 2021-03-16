@@ -55,3 +55,27 @@
 .main-show{
   text-align: center;
 }
+.tweet__manage{
+  display: block;
+  margin-top: 30px;
+  width: 15vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+.tweet_edit_btn{
+  display: block;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  background-color: #ff0000;
+  padding: 5px 0px 5px 0px;
+}
+.tweet_delete_btn{
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin-top: 30px;
+  border: 2px solid black;
+  background-color: #dcdcdc;
+  padding: 5px 0px 5px 0px;
+}

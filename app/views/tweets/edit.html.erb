@@ -1,0 +1,55 @@
+<%= render "shareds/header" %>
+
+<%= form_with(model: @tweet, local: true) do |f| %>
+  <h2 class="sinki">ツイートの編集</h2>
+
+  <div class="form-true">
+
+    <div class="form-group">
+      <div class="form-text-wrap">
+        <label class="form-text" >公園の画像</label>
+      </div>
+          <%= f.file_field :image, class:"input-text-image", id:"item-image" %>
+    </div>
+
+    <div class="form-group">
+      <div class='form-text-wrap'>
+        <label class="form-text" >ツイートタイトル</label>
+      </div>
+      <%= f.text_area :title, class:"input-text-title", autofocus: true, placeholder:"ツイートの題名を入力" %>
+    </div>
+
+    <div class="form-group">
+      <div class='form-text-wrap'>
+        <label class="form-text" >ツイート</label>
+      </div>
+      <%= f.text_area :text, class:"input-tweet-text", autofocus: true, placeholder:"ツイートを入力" %>
+    </div>
+
+    <div class="form-group">
+      <div class='form-text-wrap'>
+        <label class="form-text" >場所</label>
+      </div>
+      <%= f.collection_select(:area_id, Area.all, :id, :name, {}, {class:"select-tweet-area", id:"tweet-area"}) %>
+    </div>
+
+    <div class="form-group">
+      <div class='form-text-wrap'>
+        <label class="form-text" >遊べるもの</label>
+      </div>
+      <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-tweet-category", id:"tweet-category"}) %>
+    </div>
+
+    <div class="form-group">
+      <div class='form-text-wrap'>
+        <label class="form-text" >公園の規模</label>
+      </div>
+      <%= f.collection_select(:status_id, Status.all, :id, :name, {}, {class:"select-tweet-status", id:"item-sales-status"}) %>
+    </div>
+
+
+    <div class="actions">
+      <%= f.submit "変更を更新する", class:"register-red-btn" %>
+    </div>
+  </div>
+<% end %>
