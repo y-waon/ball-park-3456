@@ -1,0 +1,57 @@
+.image-content-show{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tweet-img-show{
+  height: 60vh;
+  width:　70vw;
+  margin-top: 30px;
+}
+
+.tweet_user{
+  text-decoration: none;
+  color: black;
+  margin-left: 30px;
+  font-size: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.show-tweet-show{
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.show-tweet-text{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.show-table{
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.show-value {
+  width: 50vw;
+  padding: 20px;
+  border: 1px solid #dedede;
+  font-size: 14px;
+  text-align: center;
+}
+
+.show-area {
+  width: 20vh;
+  background-color: #eee;
+  border: 1px solid #dedede;
+  font-size: 14px;
+  text-align: center;
+  padding: 20px;
+}
+.main-show{
+  text-align: center;
+}
