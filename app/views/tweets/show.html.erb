@@ -1,0 +1,33 @@
+<%= render "shareds/header" %>
+
+<h2 class="sinki">TWEET　詳細</h2>
+
+<div class="main-show">
+  <%= link_to ("投稿者　#{@tweet.user.user_name}　さん"), "#", class: :tweet_user %>
+  <div class='image-content-show'>
+    <%= image_tag @tweet.image, class: "tweet-img-show" %>
+  </div>
+  <div class='show-tweet-show'>
+    <%= @tweet.title %>
+  </div>
+  <h2 class="sinki">公園の紹介</h2>
+  <div class='show-tweet-text'>
+    <%= @tweet.text %>
+  </div>
+  <table class="show-table">
+    <tbody>
+      <tr>
+        <th class="show-area">地域</th>
+        <td class="show-value"><%= @tweet.area.name %></td>
+      </tr>
+      <tr>
+        <th class="show-area">遊べるもの</th>
+        <td class="show-value"><%= @tweet.category.name %></td>
+      </tr>
+      <tr>
+        <th class="show-area">公園の規模</th>
+        <td class="show-value"><%= @tweet.area.name %></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -40,6 +40,13 @@
 }
 .tweet-title{
   font-weight: bold;
+  color: black;
+}
+.tweet-text{
+  color: black;
+}
+.imag-img{
+  text-decoration: none;
 }
 .tweet-img{
   height: 25vh;
