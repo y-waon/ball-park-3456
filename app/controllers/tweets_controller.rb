@@ -1,4 +1,6 @@
 class TweetsController < ApplicationController
+  before_action :set_q, only: [:index, :search]
+
   def index
     @tweets = Tweet.all.order(created_at: :desc)
   end
@@ -44,7 +46,16 @@ class TweetsController < ApplicationController
     end
   end
 
+  def search
+    @results = @q.result
+  end
+
   private
+
+  def set_q
+    @q = Tweet.ransack(params[:q])
+  end
+
 
   def tweet_params
     params.require(:tweet).permit(:title, :text, :area_id, :category_id, :status_id, :image).merge(user_id: current_user.id)

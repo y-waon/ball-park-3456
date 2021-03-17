@@ -1,0 +1,17 @@
+<%= render "shareds/header" %>
+
+<% @results.each do |tweet| %>
+  <li class="tweet-all">
+    <%= link_to tweet_path(tweet.id), class:"imag-img" do %>
+      <div class='image-content'>
+        <%= image_tag tweet.image, class: "tweet-img" %>
+      </div>
+      <div class='tweet-title'>
+        <%= tweet.title %>
+      </div>
+      <div class='tweet-text'>
+        <%= tweet.area.name %>
+      </div>
+    <% end %>
+  </li>
+<% end %>
