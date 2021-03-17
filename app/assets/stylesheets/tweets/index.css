@@ -31,8 +31,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  margin: 0px 10vw 30px 10vw;
 }
 .tweet-all{
   text-align: center;
@@ -51,4 +50,33 @@
 .tweet-img{
   height: 25vh;
   width: 25vh;
+}
+.seach{
+  text-align: center;
+}
+
+.seach-forms{
+  padding-top: 15px;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  border: thick double green;
+  align-items: center;
+}
+
+.seach-ob{
+  font-weight: bold;
+  margin-right: 33vw;
+  font-size: 23px;
+}
+
+.seach-input{
+  width: 30vw;
+  padding: 5px 10px 5px 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-right: 10px;
+}
+
+.seach-btn{
+  padding: 5px 20px 5px 20px;
 }
