@@ -12,7 +12,21 @@
                       <br>ororororororo</div>
     </div>
   </div>
+
+  <div class="seach-a">
+    <div class="seach">
+      <%= search_form_for @q, url: search_tweets_path, class:"seach-forms" do |f| %>
+        <label class="seach-ob" >検索</label>
+        <div class="seach-th">
+          <%= f.search_field :title_cont, placeholder:"例) ◯ ◯公園" ,class:"seach-input" %>
+          <%= f.submit "検索" , class:"seach-btn" %>
+        <div class="seach-th">
+      <% end %>
+    </div>
+  </div>
+
   <h2 class="sinki">NEW TWEET 一覧表示</h2>
+
   <ul class="tweet-wrap">
     <% @tweets.each do |tweet|%>
       <li class="tweet-all">
