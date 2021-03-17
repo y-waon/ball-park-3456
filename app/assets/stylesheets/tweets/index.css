@@ -79,4 +79,16 @@
 
 .seach-btn{
   padding: 5px 20px 5px 20px;
+  background-color: #87cefa;
+  border: 1px solid black;
+}
+
+.sinki-a{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  border-bottom: solid black;
+  margin-left: 10vh;
+  margin-right: 10vh;
 }
