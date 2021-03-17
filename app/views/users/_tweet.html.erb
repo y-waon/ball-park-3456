@@ -1,0 +1,11 @@
+<div class="card">
+  <div class='image-content'>
+    <%= link_to image_tag(tweet.image, class: :card_img ), tweet_path(tweet.id) %>
+  </div>
+  <div class='tweet-title'>
+    <%= tweet.title %>
+  </div>
+  <div class='card_summary'>
+    <%= tweet.area.name %>
+  </div>
+</div>
