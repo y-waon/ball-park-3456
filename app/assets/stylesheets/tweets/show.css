@@ -79,3 +79,45 @@
   background-color: #dcdcdc;
   padding: 5px 0px 5px 0px;
 }
+
+.tweet-commets{
+  background-color: #b0c4de;
+  margin: 0px 10vw 30px 10vw;
+  padding: 20px 0px 0px 30px;
+}
+
+.field{
+  text-align: left;
+  margin-bottom: 30px;
+}
+.comment-form{
+  margin: 20px 0px 0px 0px;
+  width: 30vw;
+  padding: 5px 20px 5px 20px;
+}
+.form_btn{
+  margin: 0px 0px 0px 20px;
+  padding: 5px 20px 5px 20px;
+}
+.comment-lists{
+  padding-bottom: 30px;
+}
+.itiran{
+  text-align: left;
+}
+
+.comments_lists{
+  text-align: left;
+  margin-top:  30px;
+  justify-content: space-between;
+}
+.comments_list{
+  display: flex;
+}
+.comments_user{
+  display: flex;
+}
+
+p{
+  margin: 0px 20px 0px 20px;
+}

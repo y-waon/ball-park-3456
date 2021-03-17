@@ -1,9 +1,9 @@
 <%= render "shareds/header" %>
 
-<h2 class="sinki">TWEET　詳細</h2>
+<h2 class="sinki">TWEETの詳細</h2>
 
 <div class="main-show">
-  <%= link_to ("投稿者　#{@tweet.user.user_name}　さん"), user_path(@tweet.user.id), class: :tweet_user %>
+  <%= link_to ("投稿者 #{@tweet.user.user_name} さん"), user_path(@tweet.user.id), class: :tweet_user %>
   <% if user_signed_in? && current_user.id == @tweet.user_id %>
     <div class="tweet__manage">
       <%= link_to "編集する", edit_tweet_path(@tweet.id), class: :tweet_edit_btn %>
@@ -36,4 +36,30 @@
       </tr>
     </tbody>
   </table>
+
+  <div class="tweet-commets">
+    <% if user_signed_in? %>
+      <%= form_with(model: [@tweet, @comment], local: true) do |f| %>
+        <div class="field">
+          <%= f.label :comments, "コメント入力" %><br />
+          <%= f.text_field :text, class:"comment-form" %><%= f.submit "送信する", class: :form_btn  %>
+        </div>
+        <div class="actions">
+        </div>
+      <% end %>
+    <% end %>
+    <ul class="comment-lists">
+      <li class="itiran">コメント一覧</li>
+    <% @comments.each do |comment| %>
+      <div class="comments_lists">
+        <li class="comments_list">
+          ■<p><%= comment.text %></p>
+        </li>
+        <li class="comments_user">
+          投稿者<p><%= comment.user.user_name %></p>さん
+        </li>
+      </div>
+    <% end %>
+    </ul>
+  </div>
 </div>
