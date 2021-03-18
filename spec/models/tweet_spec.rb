@@ -4,6 +4,7 @@ RSpec.describe Tweet, type: :model do
   before do
     @tweet = FactoryBot.build(:tweet)
     @user =FactoryBot.create(:user)
+    @comment = FactoryBot.build(:comment)
   end
   describe "新規ツイート" do
     context '新規ツイートできるとき' do
@@ -57,6 +58,22 @@ RSpec.describe Tweet, type: :model do
         @tweet.status_id = 1
         @tweet.valid?
         expect(@tweet.errors.full_messages).to include("Statusは1以外の値にしてください")
+      end
+    end
+  end
+  describe "新規コメント" do
+    context 'コメントできる時' do
+      it '一連のコメント' do
+        @comment.user = @user
+        @comment.tweet = @tweet
+        expect(@comment).to be_valid
+      end
+    end
+    context 'コメントできない時' do
+      it 'コメントが空だった場合' do
+        @comment.text = ''
+        @comment.valid?
+        expect(@comment.errors.full_messages).to include("Textを入力してください")
       end
     end
   end
