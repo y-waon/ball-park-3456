@@ -38,3 +38,11 @@
   margin-top: 20px;
   text-align: center;
 }
+
+.login-flash-message{
+  margin-bottom: 30px;
+}
+
+li{
+  list-style: none;
+}
