@@ -62,5 +62,3 @@ gem 'image_processing', '~> 1.2'
 gem 'active_hash'
 gem 'ransack'
 gem 'rails-i18n'
-gem "aws-sdk-s3", require: false
-
