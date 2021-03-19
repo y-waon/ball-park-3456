@@ -13,6 +13,7 @@ BALL-SEARCH
 ツイート削除機能
 コメント機能
 ツイート検索機能
+ユーザー投稿確認機能
 
 ## URL
 
@@ -36,15 +37,41 @@ deviseを用いて実装しました。メールアドレス、パスワード�
 また、ログイン機能の方は、メールアドレスとパスワードの入力でログインできます。
 また、エラーメッセージは、日本語の表示になるように、rails-i18nのgemを導入しました。
 
+・ユーザー新規登録画面
+
+<img width="1440" alt="ポートフォリオ 新規登録画面" src="https://user-images.githubusercontent.com/78067393/111743595-4ad3cd80-88cd-11eb-8a2b-0bfcd44370bb.png">
+
+・ユーザーログイン画面
+
+<img width="1440" alt="ログイン画面" src="https://user-images.githubusercontent.com/78067393/111743840-9c7c5800-88cd-11eb-8ab6-b54c907aa51a.png">
+
+https://user-images.githubusercontent.com/78067393/111744653-e6197280-88ce-11eb-9dab-396adac1b3fa.mp4
+
 ・新規ツイート機能
 
 新規ツイートする際には、全てバリデーションをかけているため、どこかの項目に空だと投稿できないようになっています。
 投稿されたツイートは、トップページに表示されます。
 また、ユーザー新規登録機能、ユーザーログイン機能と同様に、rails-i18nのgemを導入しました。
 
+・新規ツイート画面
+
+<img width="1440" alt="新規ツイート" src="https://user-images.githubusercontent.com/78067393/111744679-efa2da80-88ce-11eb-87d5-d1548e22dcaf.png">
+
+https://user-images.githubusercontent.com/78067393/111744653-e6197280-88ce-11eb-9dab-396adac1b3fa.mp4
+
+・ツイートされたものの表示
+
+<img width="1433" alt="投稿されたツイートの表示" src="https://user-images.githubusercontent.com/78067393/111745870-9176f700-88d0-11eb-9dc6-d2db6b3031ab.png">
+
+
 ・ツイート削除機能・ツイート編集機能
 
+(https://user-images.githubusercontent.com/78067393/111746422-604af680-88d1-11eb-823e-5651769e9526.jpeg)
+
 ツイートの詳細画面にて投稿したユーザーのみが、編集・削除できます。
+
+・ツイート削除画面・ツイート編集画面
+
 
 ・コメント機能
 
@@ -65,12 +92,10 @@ deviseを用いて実装しました。メールアドレス、パスワード�
 ・コメント機能の部分でデフォルトの設定だと投稿した時刻のみ表示されるが、time_ago_in_wordsを用いて、config/localesにja.yml
 に決まったコードを書くことにより、コメントしてからの時刻のカウントが可能になった。
 
-
 # 課題や今後実装したい機能
 
 ・ユーザーのフォロー機能
 ・ツイートのタグ付け機能(複数のタグつけ可能)
-
 
 # DB設計
 
@@ -108,8 +133,8 @@ deviseを用いて実装しました。メールアドレス、パスワード�
 
 | Column             | Type       | Options                        |
 | ------------------ | ---------- | ------------------------------ |
-| title              | string     | null: false                    |
-| text               | string     | null: false, unique: true      |
+| text               | string     | null: false                    |
+| tweet              | string     | null: false, unique: true      |
 | user               | references | null: false, foreign_key: true |
 
 ### Association
