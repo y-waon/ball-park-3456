@@ -99,7 +99,9 @@ https://user-images.githubusercontent.com/78067393/111756784-f422bf80-88dd-11eb-
 ツイートを公園名で検索することができます。
 検索機能の導入のために、ransackを導入しています。
 
-・ツイート検索の動き
+・ツイート検索の動きのGIF
+
+https://user-images.githubusercontent.com/78067393/111767840-87fa8880-88ea-11eb-8524-377685c19f33.mp4
 
 # 工夫したポイント
 
