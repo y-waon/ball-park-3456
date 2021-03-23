@@ -40,7 +40,7 @@ deviseを用いて実装しました。メールアドレス、パスワード�
 
 ・新規ユーザー登録のGIF  
 
-https://user-images.githubusercontent.com/78067393/111760025-97290880-88e1-11eb-94ab-fd8c915f3fe8.mp4  
+https://user-images.githubusercontent.com/78067393/112083905-40664c00-8bcb-11eb-8bbf-7c22cb643a46.gif  
 
 ・ユーザーログイン画面  
 
